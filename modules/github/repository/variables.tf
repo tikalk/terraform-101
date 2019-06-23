@@ -44,3 +44,8 @@ variable "admin_access_users" {
   default = []
 }
 
+variable "allow_merge_commit" {
+  type = "string"
+  default = "false"
+}
+
