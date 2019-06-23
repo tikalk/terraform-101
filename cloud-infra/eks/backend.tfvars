@@ -1,0 +1,5 @@
+# bucket = "terraform-state-bucket"
+# dynamodb_table = "TerraformStatelock"
+# key = "eks/terraform.tfstate"
+# profile = "default"
+# region = "eu-west-1"

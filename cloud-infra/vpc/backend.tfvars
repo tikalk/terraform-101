@@ -1,0 +1,5 @@
+# bucket = "terraform-state-bucket"
+# dynamodb_table = "TerraformStatelock"
+# key = "vpc/terraform.tfstate"
+# profile = "intel-sport"
+# region = "eu-west-1"
