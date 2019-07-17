@@ -1,0 +1,9 @@
+terraform {
+  backend "s3" {
+    profile        = "tikal"
+    region         = "eu-central-1"
+    bucket         = "tikal-fuse-terraform-state"
+    key            = "base/terraform.tfstate"
+    dynamodb_table = "TerraformFuseStatelock"
+  }
+}

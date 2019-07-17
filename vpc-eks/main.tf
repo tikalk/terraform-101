@@ -1,0 +1,20 @@
+module "infra" {
+  source = "../suites/infra"
+
+  assumed_role_admin_group = "${var.assumed_role_admin_group}"
+  bucket                   = "${var.bucket}"
+  cluster_version          = "${var.cluster_version}"
+  dynamodb_table           = "${var.dynamodb_table}"
+  operators                = "${var.operators}"
+  primary_domain           = "${var.primary_domain}"
+  private_subnets          = "${var.private_subnets}"
+  profile                  = "${var.profile}"
+  public_subnets           = "${var.public_subnets}"
+  region                   = "${var.region}"
+  vpc_cidr_block           = "${var.vpc_cidr_block}"
+  distribute_via_keybase   = "${var.distribute_via_keybase}"
+  keybase_user             = "${var.keybase_user}"
+  worker_groups = "${var.worker_groups}"
+  cluster_tags = "${var.cluster_tags}"
+  map_users = "${var.map_users}"
+}
